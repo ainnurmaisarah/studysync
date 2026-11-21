@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account – StudySync</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/auth.css">
+</head>
+<body>
+  <main class="auth-page">
+    <a class="brand auth-brand" href="/">
+      <img src="/assets/images/favicon.svg" alt="">
+      StudySync
+    </a>
+
+    <div class="panel auth-card">
+      <h1>Create your account</h1>
+      <p class="auth-subtitle">It takes less than a minute.</p>
+
+      <div id="form-alert" class="alert d-none" role="alert"></div>
+
+      <form id="register-form" novalidate>
+        <div class="mb-3">
+          <label class="form-label" for="register-name">Full name</label>
+          <input class="form-control" type="text" id="register-name" name="fullName"
+                 autocomplete="name" aria-describedby="register-name-error">
+          <div class="invalid-feedback" id="register-name-error"></div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="register-email">Email address</label>
+          <input class="form-control" type="email" id="register-email" name="email"
+                 autocomplete="email" aria-describedby="register-email-error">
+          <div class="invalid-feedback" id="register-email-error"></div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="register-password">Password</label>
+          <input class="form-control" type="password" id="register-password" name="password"
+                 autocomplete="new-password"
+                 aria-describedby="register-password-error register-password-hint">
+          <div class="invalid-feedback" id="register-password-error"></div>
+          <div class="form-text" id="register-password-hint">
+            At least 8 characters, with a letter and a number.
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label" for="register-confirm">Confirm password</label>
+          <input class="form-control" type="password" id="register-confirm" name="confirmPassword"
+                 autocomplete="new-password" aria-describedby="register-confirm-error">
+          <div class="invalid-feedback" id="register-confirm-error"></div>
+        </div>
+
+        <button class="btn btn-primary w-100" type="submit">Create account</button>
+      </form>
+
+      <p class="auth-footer-text">Already have an account? <a href="/login">Log in</a></p>
+    </div>
+
+    <a class="auth-back" href="/">&larr; Back to home</a>
+  </main>
+
+  <script type="module" src="/assets/js/pages/register-page.js"></script>
+</body>
+</html>
