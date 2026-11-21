@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudySync – Smart Student Academic Planner</title>
+  <meta name="description" content="Manage assignments, exams, classes, study sessions and GPA in one place.">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/landing.css">
+</head>
+<body>
+  <header class="landing-header">
+    <div class="container landing-header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/images/favicon.svg" alt="">
+        StudySync
+      </a>
+      <nav class="landing-nav" aria-label="Main">
+        <a class="landing-nav-link" href="#features">Features</a>
+        <a class="landing-nav-link" href="#how-it-works">How it works</a>
+        <div class="landing-actions">
+          <a class="btn btn-outline-secondary" href="/login">Log in</a>
+          <a class="btn btn-primary" href="/register">Get started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Every deadline, class and study session in one place.</h1>
+          <p class="hero-lead">
+            StudySync is an academic planner for university and college students.
+            Track assignments and exams, build your timetable, focus with a Pomodoro
+            timer and keep an eye on your GPA, without juggling five different apps.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="/register">Create your account</a>
+            <a class="btn btn-outline-secondary btn-lg" href="/login">Log in</a>
+          </div>
+          <p class="hero-note">Built for students managing a full semester workload.</p>
+        </div>
+
+        <aside class="panel example-card" aria-label="Example of a day in StudySync">
+          <div class="example-card-header">
+            <span>Today</span>
+            <span class="example-label">Example view</span>
+          </div>
+          <ul class="example-list">
+            <li class="example-item">
+              <span class="example-marker marker-danger"></span>
+              <div>
+                <p class="example-title">Assignment 2 due</p>
+                <p class="example-meta">Database Systems · 11:59 PM · Urgent</p>
+              </div>
+            </li>
+            <li class="example-item">
+              <span class="example-marker marker-primary"></span>
+              <div>
+                <p class="example-title">Lecture: Data Structures</p>
+                <p class="example-meta">10:00 AM – 12:00 PM · Room B2.4</p>
+              </div>
+            </li>
+            <li class="example-item">
+              <span class="example-marker marker-success"></span>
+              <div>
+                <p class="example-title">Focus session</p>
+                <p class="example-meta">2 × 25 minutes · Calculus II</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Everything a semester throws at you</h2>
+          <p>Each part of StudySync works on its own and feeds the same dashboard and calendar.</p>
+        </div>
+        <div class="features-grid">
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-journal-check"></i></span>
+            <h3>Assignments and exams</h3>
+            <p>Record deadlines, priorities and progress. Filter and sort to see what matters first.</p>
+          </article>
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-calendar-week"></i></span>
+            <h3>Weekly timetable</h3>
+            <p>Lay out your classes by day and time. Overlapping classes are caught before they are saved.</p>
+          </article>
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-calendar3"></i></span>
+            <h3>One calendar</h3>
+            <p>See assignments, exams, classes, study sessions and personal events together.</p>
+          </article>
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-bell"></i></span>
+            <h3>Deadline reminders</h3>
+            <p>In-app notifications for upcoming and overdue work, with your own reminder times.</p>
+          </article>
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-stopwatch"></i></span>
+            <h3>Pomodoro timer</h3>
+            <p>Focus and break cycles you can customise. Finished sessions are saved to your history.</p>
+          </article>
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-graph-up"></i></span>
+            <h3>Study progress</h3>
+            <p>Charts of your study hours and consistency, based on the sessions you actually record.</p>
+          </article>
+          <article class="panel feature-card">
+            <span class="feature-icon"><i class="bi bi-mortarboard"></i></span>
+            <h3>GPA and CGPA</h3>
+            <p>Calculate semester GPA and cumulative CGPA from credit hours and grades.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How it works</h2>
+          <p>Set it up once, then let the dashboard keep you on track.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <div class="step-number">1</div>
+            <h3>Add your courses</h3>
+            <p>Enter your timetable, exams and assignment deadlines.</p>
+          </li>
+          <li class="step">
+            <div class="step-number">2</div>
+            <h3>Plan your week</h3>
+            <p>Check the dashboard and calendar to see what is due and when.</p>
+          </li>
+          <li class="step">
+            <div class="step-number">3</div>
+            <h3>Study and track</h3>
+            <p>Use the Pomodoro timer and watch your progress build up.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="panel cta-band">
+          <h2>Ready to get organised?</h2>
+          <p>Create an account and add your first assignment in a couple of minutes.</p>
+          <a class="btn btn-primary btn-lg" href="/register">Get started</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container landing-footer">
+    <span>© 2026 StudySync</span>
+    <span>A student academic planner</span>
+  </footer>
+</body>
+</html>

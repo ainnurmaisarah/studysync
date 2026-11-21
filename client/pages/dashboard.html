@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard – StudySync</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/pages/dashboard.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div id="sidebar-slot"></div>
+
+    <div class="app-main">
+      <div id="navbar-slot" class="topbar-slot"></div>
+
+      <main class="app-content">
+        <div class="page-header">
+          <h1>Welcome back</h1>
+          <p class="text-subtle mb-0" id="today-date"></p>
+        </div>
+
+        <div class="alert alert-info preview-notice" role="note">
+          This is the dashboard layout. The figures stay empty until the assignment, exam,
+          timetable and study modules are built and connected to the database.
+        </div>
+
+        <section class="stats-grid" aria-label="Academic summary">
+          <article class="panel stat-card">
+            <p class="stat-label">Total assignments</p>
+            <p class="stat-value">&ndash;</p>
+          </article>
+          <article class="panel stat-card">
+            <p class="stat-label">Pending assignments</p>
+            <p class="stat-value">&ndash;</p>
+          </article>
+          <article class="panel stat-card">
+            <p class="stat-label">Completed assignments</p>
+            <p class="stat-value">&ndash;</p>
+          </article>
+          <article class="panel stat-card">
+            <p class="stat-label">Upcoming examinations</p>
+            <p class="stat-value">&ndash;</p>
+          </article>
+          <article class="panel stat-card">
+            <p class="stat-label">Study hours this week</p>
+            <p class="stat-value">&ndash;</p>
+          </article>
+          <article class="panel stat-card">
+            <p class="stat-label">CGPA</p>
+            <p class="stat-value">&ndash;</p>
+          </article>
+        </section>
+
+        <div class="dashboard-panels">
+          <section class="panel dashboard-panel" aria-labelledby="deadlines-heading">
+            <h2 id="deadlines-heading">Upcoming deadlines</h2>
+            <p class="empty-state">Your assignment and exam deadlines will be listed here.</p>
+          </section>
+
+          <section class="panel dashboard-panel" aria-labelledby="classes-heading">
+            <h2 id="classes-heading">Today's classes</h2>
+            <p class="empty-state">Classes from your timetable will be listed here.</p>
+          </section>
+
+          <section class="panel dashboard-panel" aria-labelledby="activity-chart-heading">
+            <h2 id="activity-chart-heading">Study activity this week</h2>
+            <p class="empty-state">A chart of your recorded study time will appear here.</p>
+          </section>
+
+          <section class="panel dashboard-panel" aria-labelledby="recent-heading">
+            <h2 id="recent-heading">Recent activity</h2>
+            <p class="empty-state">Your latest changes will appear here.</p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/assets/js/pages/dashboard-page.js"></script>
+</body>
+</html>
