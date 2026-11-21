@@ -1,0 +1,42 @@
+/* Map our design tokens onto Bootstrap's own variables */
+:root {
+  --bs-primary: var(--color-primary);
+  --bs-primary-rgb: 61, 99, 201;
+  --bs-body-font-family: var(--font-sans);
+  --bs-body-font-size: 0.95rem;
+  --bs-body-bg: var(--color-bg);
+  --bs-body-color: var(--color-text);
+  --bs-link-color: var(--color-primary);
+  --bs-link-hover-color: var(--color-primary-hover);
+  --bs-border-color: var(--color-border);
+  --bs-border-radius: var(--radius-md);
+  --bs-border-radius-lg: var(--radius-lg);
+}
+
+body {
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.text-subtle {
+  color: var(--color-text-muted);
+}
